@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Iceland 24–27">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Iceland 24–27 Sep · maps</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --card: #fffdf8;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #e7e0d4;
+      --accent: #0f4c81;
+      --accent-soft: #e6eef6;
+      --good: #14532d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 16px 16px calc(28px + env(safe-area-inset-bottom));
+    }
+    h1 { font-size: 1.45rem; margin: 0 0 6px; }
+    h2 { font-size: 1.15rem; margin: 0 0 8px; }
+    p { margin: 0 0 10px; color: var(--muted); }
+    .lede { font-size: 0.95rem; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      gap: 8px;
+      padding: 10px 0 12px;
+      background: var(--bg);
+    }
+    nav a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 0;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    section.day {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .meta { font-size: 0.9rem; margin-bottom: 12px; }
+    .stop {
+      border-top: 1px solid var(--line);
+      padding: 14px 0;
+    }
+    .stop:first-of-type { border-top: 0; }
+    .time {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .name {
+      font-size: 1.12rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+    .note { font-size: 0.92rem; color: var(--muted); margin: 0 0 10px; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    a.btn, button.btn {
+      appearance: none;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font: inherit;
+      font-weight: 650;
+      font-size: 0.92rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a.maps {
+      background: var(--accent);
+      color: #fff;
+      flex: 1;
+      text-align: center;
+      min-width: 120px;
+    }
+    a.drive {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    button.copy {
+      background: #ece7dc;
+      color: var(--ink);
+    }
+    button.copy.done { background: #dcfce7; color: var(--good); }
+    details {
+      margin-top: 8px;
+      border-top: 1px dashed var(--line);
+      padding-top: 10px;
+    }
+    summary {
+      font-weight: 650;
+      cursor: pointer;
+      padding: 6px 0;
+    }
+    .how {
+      font-size: 0.9rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Iceland 24–27 Sep</h1>
+  <p class="lede">Tap <strong>Google Maps</strong> to open that pin on your iPhone. Tap <strong>Copy</strong> if you want the Icelandic name on the clipboard. Times are 12-hour, no am/pm.</p>
+  <div class="how">
+    <strong>On your iPhone.</strong> Open this file in Safari (AirDrop it, email it to yourself, or put it in iCloud Drive). Share → Add to Home Screen. Download offline Google Maps for South Iceland before you lose signal.
+  </div>
+
+  <nav>
+    <a href="#thu">Thu</a>
+    <a href="#fri">Fri</a>
+    <a href="#sat">Sat</a>
+    <a href="#sun">Sun</a>
+  </nav>
+
+  <section class="day" id="thu">
+    <h2>Thu 24 · Vík</h2>
+    <p class="meta">Land 8:00 · van 9:00 · overnight Vík Camping. Fill diesel in town that evening, not on the peninsula. Kvernufoss is not Thursday.</p>
+
+    <article class="stop">
+      <div class="time">8:00</div>
+      <p class="name">Keflavík Airport (KEF)</p>
+      <p class="note">Bags, then Happy Campers shuttle.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.9850,-22.6056">Google Maps</a>
+        <button class="btn copy" data-copy="Keflavík Airport">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">9:00</div>
+      <p class="name">Happy Campers</p>
+      <p class="note">Stapabraut 21, Reykjanesbær. 10 min from the airport, not Reykjavík. Van is usually full — skip fuel here.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.9708,-22.5094">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.9708,-22.5094&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Happy Campers Stapabraut 21 Reykjanesbær">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">9:00–10:15</div>
+      <p class="name">Krónan / Bónus Reykjanesbær</p>
+      <p class="note">Grocery in town. Do not detour into Reykjavík. Vínbúðin if you want alcohol.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Krónan%20Fitjabraut%20Reykjanesbær">Google Maps</a>
+        <button class="btn copy" data-copy="Krónan Fitjabraut Reykjanesbær">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">11:45–12:45</div>
+      <p class="name">Seljalandsfoss</p>
+      <p class="note">Behind-the-falls path. Waterproof jacket.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.6156,-19.9886">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.6156,-19.9886&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Seljalandsfoss">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">same stop</div>
+      <p class="name">Gljúfrabúi</p>
+      <p class="note">Slot canyon 5 min north of Seljalandsfoss.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.6214,-19.9880">Google Maps</a>
+        <button class="btn copy" data-copy="Gljúfrabúi">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">1:10–2:10</div>
+      <p class="name">Skógafoss</p>
+      <p class="note">Stairs if legs feel good. Then ~20 min to Dyrhólaey.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.5321,-19.5115">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.5321,-19.5115&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Skógafoss">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">2:30–5:15</div>
+      <p class="name">Dyrhólaey</p>
+      <p class="note">First if wind is west. Two stops, not one.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.3995,-19.1272">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.3995,-19.1272&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Dyrhólaey">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">2:30–5:15</div>
+      <p class="name">Reynisfjara</p>
+      <p class="note">Stay behind the rope. Sneaker waves are real.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.4046,-19.0435">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.4046,-19.0435&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Reynisfjara">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">Evening</div>
+      <p class="name">Vík Camping</p>
+      <p class="note">Klettsvegur 7. Kitchen closes ~10:00–10:30. Charge laptops there.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.41948,-18.9953">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.41948,-18.9953&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Vík Camping Klettsvegur 7">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">Evening</div>
+      <p class="name">Krónan Vík</p>
+      <p class="note">Austurvegur 20, open until 9:00. Last proper shop until Höfn.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Krónan%20Austurvegur%2020%20Vík">Google Maps</a>
+        <button class="btn copy" data-copy="Krónan Austurvegur 20 Vík">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">Evening</div>
+      <p class="name">N1 Vík (diesel)</p>
+      <p class="note">Austurvegur 16–18, next to Krónan. 24h card pumps. Fill tonight.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=N1%20Austurvegur%2018%20Vík">Google Maps</a>
+        <button class="btn copy" data-copy="N1 Vík">Copy</button>
+      </div>
+    </article>
+
+    <details>
+      <summary>Thursday skips (add in drive order)</summary>
+      <article class="stop">
+        <p class="name">Urriðafoss</p>
+        <p class="note">20 min. After grocery, before Seljalandsfoss.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.8667,-20.5278">Google Maps</a>
+          <button class="btn copy" data-copy="Urriðafoss">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Kvernufoss</p>
+        <p class="note">40 min. After Skógafoss. Do not put this on Thursday unless the day falls apart.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.5294,-19.5036">Google Maps</a>
+          <button class="btn copy" data-copy="Kvernufoss">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Sólheimajökull</p>
+        <p class="note">45 min look. After Skógafoss, before Vík.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.5308,-19.3664">Google Maps</a>
+          <button class="btn copy" data-copy="Sólheimajökull">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Sólheimasandur plane wreck</p>
+        <p class="note">~2.5 h walk. Only if a hole opens.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.4905,-19.3647">Google Maps</a>
+          <button class="btn copy" data-copy="Sólheimasandur plane wreck">Copy</button>
+        </div>
+      </article>
+    </details>
+  </section>
+
+  <section class="day" id="fri">
+    <h2>Fri 25 · Zodiac + Vestrahorn</h2>
+    <p class="meta">Leave Vík 7:15. Zodiac 12:45, check-in 12:15. Overnight Viking Café. Do not hike the canyons this morning.</p>
+
+    <article class="stop">
+      <div class="time">7:15–9:50</div>
+      <p class="name">Fjallsárlón</p>
+      <p class="note">The other lagoon. Shore walk only. One 5-min Eldhraun pullout is fine on the way.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.01622,-16.36491">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.01622,-16.36491&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Fjallsárlón">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">11:20 · Zodiac 12:45</div>
+      <p class="name">Jökulsárlón</p>
+      <p class="note">Plate-scanned parking. Check in 20–30 min before 12:45.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.0433,-16.1806">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.0433,-16.1806&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Jökulsárlón">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">2:00–3:00</div>
+      <p class="name">Diamond Beach</p>
+      <p class="note">Cross the highway to the ocean side.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.0414,-16.1775">Google Maps</a>
+        <button class="btn copy" data-copy="Diamond Beach Iceland">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">optional ~3:45</div>
+      <p class="name">Nettó Höfn</p>
+      <p class="note">Litlabrú 1. Last supermarket until Sunday. 5-min dip, not a sit-down.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Nettó%20Litlabrú%201%20Höfn">Google Maps</a>
+        <button class="btn copy" data-copy="Nettó Litlabrú 1 Höfn">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">4:15–7:40</div>
+      <p class="name">Vestrahorn / Viking Café</p>
+      <p class="note">Stokksnes. Last 4 km gravel, no 4x4 unless snow. Camping includes peninsula access. Café 7:30–10:00.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Viking%20Cafe%20Stokksnes">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.2442,-14.9678&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Viking Cafe Vestrahorn Stokksnes">Copy</button>
+      </div>
+    </article>
+
+    <details>
+      <summary>Friday skips (add in drive order)</summary>
+      <article class="stop">
+        <p class="name">Hjörleifshöfði</p>
+        <p class="note">1.5–2 h. Right after leaving Vík.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.4167,-18.8486">Google Maps</a>
+          <button class="btn copy" data-copy="Hjörleifshöfði">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Foss á Siðu</p>
+        <p class="note">10–15 min with Dverghamrar. On the 7:15 drive.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.8014,-17.9828">Google Maps</a>
+          <button class="btn copy" data-copy="Foss á Siðu">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Dverghamrar</p>
+        <p class="note">Next to Foss á Siðu.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.8028,-17.9772">Google Maps</a>
+          <button class="btn copy" data-copy="Dverghamrar">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Kirkjugólf</p>
+        <p class="note">10 min. Better Saturday night than Friday morning.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.7847,-18.0614">Google Maps</a>
+          <button class="btn copy" data-copy="Kirkjugólf">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Hofskirkja</p>
+        <p class="note">10 min. On the drive to Fjallsárlón.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.9053,-16.6964">Google Maps</a>
+          <button class="btn copy" data-copy="Hofskirkja">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Höfn harbor</p>
+        <p class="note">Langoustine takeaway 20 min. Sit-down fights sunset.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Höfn%20harbor%20Iceland">Google Maps</a>
+          <button class="btn copy" data-copy="Höfn harbor">Copy</button>
+        </div>
+      </article>
+    </details>
+  </section>
+
+  <section class="day" id="sat">
+    <h2>Sat 26 · M Canyon + F Canyon</h2>
+    <p class="meta">Sunrise 6:53 at Vestrahorn. Roll by 8:15. F Canyon 5:20–7:10, then Kirkjubær II. Sjónarnípa is dropped.</p>
+
+    <article class="stop">
+      <div class="time">8:15–9:50</div>
+      <p class="name">Múlagljúfur (Route 1 turnoff)</p>
+      <p class="note">Unmarked. 63.9888, -16.3957. If the 1.5 km gravel looks like a hole, park here and walk in.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.9888,-16.3957">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.9888,-16.3957&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Múlagljúfur">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">if gravel is OK</div>
+      <p class="name">Múlagljúfur parking lot</p>
+      <p class="note">End of the access road. 2WD: go slow or skip this pin and use the turnoff above.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.993021,-16.436285">Google Maps</a>
+        <button class="btn copy" data-copy="Múlagljúfur parking">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">1:45–2:35</div>
+      <p class="name">Svínafellsjökull</p>
+      <p class="note">15–20 min. Signed right, just east of Skaftafell. First cut if you used the Route 1 walk-in.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.0069,-16.8118">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.0069,-16.8118&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Svínafellsjökull">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">2:40–4:10</div>
+      <p class="name">Skaftafell / Svartifoss</p>
+      <p class="note">Park at the visitor centre. Out-and-back to the falls. Parka / park fee.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.016325,-16.967152">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.016325,-16.967152&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Skaftafell">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">5:20–7:10</div>
+      <p class="name">Fjaðrárgljúfur</p>
+      <p class="note">F Canyon. Road 206, just west of Klaustur. Parka 1,000 ISK. Sunset ~7:02. Stay on the marked rim.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.7713,-18.1720">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.7713,-18.1720&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Fjaðrárgljúfur">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">7:15+</div>
+      <p class="name">Kirkjubær II</p>
+      <p class="note">Kirkjubæjarklaustur. No reservations. Charge in the service house.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.79215,-18.05119">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=63.79215,-18.05119&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Kirkjubær II Kirkjubæjarklaustur">Copy</button>
+      </div>
+    </article>
+
+    <details>
+      <summary>Saturday skips (add in drive order)</summary>
+      <article class="stop">
+        <p class="name">Hofskirkja</p>
+        <p class="note">10 min. On the 1:45 drive toward Skaftafell.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.9053,-16.6964">Google Maps</a>
+          <button class="btn copy" data-copy="Hofskirkja">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Foss á Siðu + Dverghamrar</p>
+        <p class="note">10–15 min. On the 4:15 drive, before Road 206.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.8014,-17.9828">Google Maps</a>
+          <button class="btn copy" data-copy="Foss á Siðu">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Kirkjugólf</p>
+        <p class="note">10 min. After F Canyon, on the way back to camp.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.7847,-18.0614">Google Maps</a>
+          <button class="btn copy" data-copy="Kirkjugólf">Copy</button>
+        </div>
+      </article>
+      <article class="stop">
+        <p class="name">Systrafoss</p>
+        <p class="note">20–30 min with Systrastapi. Walk from camp.</p>
+        <div class="actions">
+          <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Systrafoss%20Kirkjubæjarklaustur">Google Maps</a>
+          <button class="btn copy" data-copy="Systrafoss">Copy</button>
+        </div>
+      </article>
+    </details>
+  </section>
+
+  <section class="day" id="sun">
+    <h2>Sun 27 · Reykjadalur + Hvammsvík</h2>
+    <p class="meta">Leave Klaustur 6:30. No F Canyon. Hvammsvík locked 3:00. Leave spa by 5:30. Dinner Sæta Svínið 8:00. Call +354 510 5900 if late.</p>
+
+    <article class="stop">
+      <div class="time">9:30–12:15</div>
+      <p class="name">Reykjadalur parking</p>
+      <p class="note">Steam Valley, 4 km north of Hveragerði. Hike/run — do not soak. Hard leave 12:30.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.0229,-21.2116">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.0229,-21.2116&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Reykjadalur car park Hveragerði">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">if you skip Reykjadalur</div>
+      <p class="name">Kvernufoss</p>
+      <p class="note">Waterfall behind Hotel Skógafoss. Not geothermal. Do not stack with Reykjadalur.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=63.5294,-19.5036">Google Maps</a>
+        <button class="btn copy" data-copy="Kvernufoss">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">grocery / fuel</div>
+      <p class="name">Bónus Selfoss</p>
+      <p class="note">Before the trail or on the way to Hvammsvík.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Bónus%20Selfoss">Google Maps</a>
+        <button class="btn copy" data-copy="Bónus Selfoss">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">3:00–5:30</div>
+      <p class="name">Hvammsvík</p>
+      <p class="note">Locked 3:00. Route 47 into Hvalfjörður — not the tunnel, not KEF. No camping on site.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.3738,-21.5639">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.3738,-21.5639&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Hvammsvík Hot Springs">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">5:35–6:20</div>
+      <p class="name">Reykjavík Eco-Campsite</p>
+      <p class="note">Sundlaugavegur 32. Long pitch, no electricity. Pre-book the gate code.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=64.146202,-21.876003">Google Maps</a>
+        <a class="btn drive" href="https://www.google.com/maps/dir/?api=1&destination=64.146202,-21.876003&travelmode=driving">Drive</a>
+        <button class="btn copy" data-copy="Reykjavík Eco-Campsite Sundlaugavegur 32">Copy</button>
+      </div>
+    </article>
+    <article class="stop">
+      <div class="time">8:00</div>
+      <p class="name">Sæta Svínið</p>
+      <p class="note">Hafnarstræti 1–3. Booked. 25–30 min walk from camp. Rain: bus 14.</p>
+      <div class="actions">
+        <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Sæta%20Svínið%20Hafnarstræti%20Reykjavík">Google Maps</a>
+        <button class="btn copy" data-copy="Sæta Svínið Hafnarstræti Reykjavík">Copy</button>
+      </div>
+    </article>
+  </section>
+
+  <script>
+    document.querySelectorAll("button.copy").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const text = btn.getAttribute("data-copy") || "";
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch {
+          const field = document.createElement("textarea");
+          field.value = text;
+          document.body.appendChild(field);
+          field.select();
+          document.execCommand("copy");
+          field.remove();
+        }
+        const prev = btn.textContent;
+        btn.textContent = "Copied";
+        btn.classList.add("done");
+        window.setTimeout(() => {
+          btn.textContent = prev;
+          btn.classList.remove("done");
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+</html>
